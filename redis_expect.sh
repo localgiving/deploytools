@@ -14,4 +14,5 @@ send "/var/lib/redis/6379\r"
 expect "Please select the redis executable path"
 send "/usr/local/bin/redis-server\r"
 expect "Is this ok? Then press ENTER to go on or Ctrl-C to abort."
-send "\r\r"
+send "\n"
+expect eof
